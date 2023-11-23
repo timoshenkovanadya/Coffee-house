@@ -133,7 +133,10 @@
   align-self: stretch;
   border-radius: 40px;
   background: url(assets/img-hero.jpg), lightgray 50% / cover no-repeat;
+  background-position: 50%;
+  background-size: cover;
   background-repeat: no-repeat;
+  
 }
 .offer {
   display: flex;
