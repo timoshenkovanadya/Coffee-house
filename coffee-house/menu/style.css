@@ -336,9 +336,10 @@
   align-items: center;
   border-radius: 40px;
   border: 1px solid var(--border-light, #c1b6ad);
+  width: 310px;
 }
 .preview:hover .irish-coffee {
-  transform: scale(1);
+  transform: scale(0.92);
   transition: 0.7s;
 }
 .box {
@@ -347,10 +348,14 @@
   flex-shrink: 0;
   border-radius: 40px;
   overflow: hidden;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 .irish-coffee {
   border-radius: 40px;
-  transform: scale(1.1);
+  transform: scale(1.00);
+  transition: 0.7s;
 }
 .description-irish-coffee {
   display: flex;
@@ -360,7 +365,7 @@
   align-items: flex-start;
   flex: 1 0 0;
   align-self: stretch;
-}
+  }
 .text-description-irish-coffee {
   display: flex;
   flex-direction: column;
@@ -392,6 +397,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
+  text-wrap: wrap;
+  word-wrap: break-word;
+  /* max-width: 100%; */
 }
 .price {
   align-self: stretch;
