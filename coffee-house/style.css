@@ -58,6 +58,7 @@
   align-items: center;
   gap: 4px;
   height: 28px;
+  cursor: pointer;
 }
 .menu-item {
   position: relative;
@@ -191,6 +192,7 @@
   gap: 8px;
   border-radius: 100px;
   background: var(--background-body, #e1d4c9);
+  cursor: pointer;
 }
 .primary-button-text {
   color: var(--text-dark, #403f3d);
