@@ -34,6 +34,7 @@
 .logo {
   width: 100px;
   height: 60px;
+  cursor:pointer;
 }
 .nav {
   display: flex;
@@ -337,6 +338,7 @@
   border-radius: 40px;
   border: 1px solid var(--border-light, #c1b6ad);
   width: 310px;
+  cursor: pointer;
 }
 .preview:hover .coffee-type {
   transform: scale(0.92);
