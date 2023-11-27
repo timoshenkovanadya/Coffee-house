@@ -611,6 +611,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  text-decoration: none;
 }
 .tel {
   display: flex;
@@ -626,6 +627,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  text-decoration: none;
 }
 .working-time {
   display: flex;
