@@ -389,11 +389,14 @@
   align-items: center;
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665f55);
+  transition: all 0.7s ease;
 }
+
 .button-left:hover svg path {
   stroke: #e1d4c9;
-  transition: 0.7s;
+  transition: transform 0.7s ease;
 }
+
 
 .button-left:hover {
   background-color: #665f55;
@@ -485,6 +488,7 @@
   align-items: center;
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665f55);
+  transition: all 0.7s ease;
 }
 .button-right:hover svg path {
   stroke: #e1d4c9;
@@ -635,9 +639,11 @@
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665f55);
   background-color: #e1d4c9;
+  transition: all 1s ease;
 }
 .button-app-store:hover {
   background-color: #665f55;
+  
 }
 .button-app-store .button-text {
   color: #403f3d;
@@ -705,6 +711,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-dark, #665f55);
   background-color: #e1d4c9;
+  transition: all 1s ease;
 }
 .button2-text {
   display: flex;
@@ -843,6 +850,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 
 .button-inst:hover {
@@ -873,6 +881,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 .button-twitter:hover {
   background-color: #e1d4c9;
@@ -903,6 +912,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 .button-facebook:hover {
   background-color: #e1d4c9;

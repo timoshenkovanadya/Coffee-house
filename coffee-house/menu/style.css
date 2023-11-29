@@ -244,6 +244,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  transition: all 0.7s ease;
 }
 .icon2 {
   display: flex;
@@ -257,6 +258,7 @@
   font-feature-settings: "clig" off, "liga" off;
   height: 30px;
   width: 30px;
+  transition: all 1s ease;
 
   /* Desktop/Action/link & button */
   font-family: Inter;
@@ -292,6 +294,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  transition: all 0.7s ease;
 }
 .icon3 {
   display: flex;
@@ -486,6 +489,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 .button-inst:hover {
   background-color: #e1d4c9;
@@ -515,6 +519,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 .button-twitter:hover {
   background-color: #e1d4c9;
@@ -545,6 +550,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s ease;
 }
 .button-facebook:hover {
   background-color: #e1d4c9;
