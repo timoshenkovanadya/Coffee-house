@@ -244,6 +244,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  transition: all 1s;
 }
 .icon2 {
   display: flex;
@@ -292,6 +293,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  transition: all 1s;
 }
 .icon3 {
   display: flex;
@@ -486,6 +488,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s;
 }
 .button-inst:hover {
   background-color: #e1d4c9;
@@ -515,6 +518,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s;
 }
 .button-twitter:hover {
   background-color: #e1d4c9;
@@ -545,6 +549,7 @@
   border-radius: 100px;
   border: 1px solid var(--border-light, #c1b6ad);
   background-color: #665f55;
+  transition: all 1s;
 }
 .button-facebook:hover {
   background-color: #e1d4c9;
