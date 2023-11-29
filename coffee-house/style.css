@@ -368,6 +368,7 @@
   align-items: center;
   gap: 40px;
   margin-bottom: 100px;
+  align-self:stretch;
 }
 .slider-little {
   display: flex;
@@ -403,7 +404,7 @@
   display: flex;
   min-width: 480px;
   max-width: 1152px;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
 }
@@ -529,16 +530,17 @@
   align-self: stretch;
 }
 .resource {
-  align-self: stretch;
+ align-self: stretch;
   color: var(--text-dark, #403f3d);
-  font-feature-settings: "clig" off, "liga" off;
+ font-feature-settings: "clig" off, "liga" off;
 
   /* Desktop/Heading/heading-2 */
   font-family: Inter;
-  font-size: 60px;
+  font-size: 59.8px;
   font-style: normal;
   font-weight: 600;
   line-height: 125%; /* 75px */
+  
 }
 .the-perfect {
   align-self: stretch;
@@ -551,6 +553,7 @@
   font-style: italic;
   font-weight: 600;
   line-height: 125%;
+  
 }
 .mobile-app {
   display: flex;
@@ -559,6 +562,9 @@
   gap: 100px;
   align-self: stretch;
   border-radius: 40px;
+  margin-left: 40px; /* добавлен*/
+  margin-right:40px; /* добавлен*/
+ 
 }
 .container-mobile-app {
   display: flex;
@@ -566,15 +572,17 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-  height: fit-content;
+  height: fit-content; 
   /* flex: 1 0 0; */
+  flex-wrap: wrap;
 }
 .offer-mobile-app {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  flex: 1 0 0;
+ flex: 1 0 0;
+ 
 }
 .text-mobile-app {
   align-self: stretch;
@@ -587,6 +595,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
+  
 }
 .download {
   align-self: stretch;
@@ -757,10 +766,9 @@
   display: block;
 }
 .mobile-screens {
-  width: 50vw;
-  height: 50vw;
-  max-width: 630px;
-  max-height: 630px;
+  
+  width: 630px;
+  height: 630px;
   background: url(assets/mobile-screens.png), lightgray 50% / contain no-repeat;
   background-color: #e1d4c9;
   background-size: contain;
@@ -1027,8 +1035,10 @@
   display: flex;
   max-width: 1360px;
   align-items: flex-start;
+  justify-content: center;
   gap: 40px;
   align-self: stretch;
+  flex-wrap: wrap;
 }
 
 .about-column {
@@ -1040,7 +1050,7 @@
 
 .about-photo-item-wrap {
   border-radius: 20px;
-  width: 660px;
+  max-width: 660px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1053,10 +1063,10 @@
 }
 
 .about-photo-item-wrap-higher {
-  height: 590px;
+  max-height: 590px;
 }
 .about-photo-item-wrap-lower {
-  height: 430px;
+  max-height: 430px;
 }
 
 .about-photo-item {
