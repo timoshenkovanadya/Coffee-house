@@ -57,7 +57,7 @@
 @media (max-width: 380px) {
   .header-container {
     padding: 0px 16px;
-      }
+  }
 }
 .logo {
   width: 100px;
@@ -117,13 +117,12 @@
   opacity: 0;
   transition: width 0.7s, opacity 0.7s;
 }
-@media(hover:hover){
+@media (hover: hover) {
   .menu-item:hover::after {
-  width: 100%;
-  opacity: 1;
-  /* right: -50%; */
-}
-
+    width: 100%;
+    opacity: 1;
+    /* right: -50%; */
+  }
 }
 .link {
   display: flex;
@@ -216,18 +215,17 @@
 .button-icon-burger .burger-hover2 {
   display: none;
 }
-@media(hover:hover){
+@media (hover: hover) {
   .button-icon-burger:hover .burger-default1,
-.button-icon-burger:hover .burger-default2 {
-  display: none;
-}
+  .button-icon-burger:hover .burger-default2 {
+    display: none;
+  }
 
-.button-icon-burger:hover .burger-hover1,
-.button-icon-burger:hover .burger-hover2 {
-  display: block;
+  .button-icon-burger:hover .burger-hover1,
+  .button-icon-burger:hover .burger-hover2 {
+    display: block;
+  }
 }
-}
-
 
 .hero {
   display: flex;
@@ -293,9 +291,9 @@
     line-height: 115%; /* 48.3px */
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .enjoy{
-    font-size:calc(42px + (72 - 42) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .enjoy {
+    font-size: calc(42px + (72 - 42) * ((100vw - 380px) / (768 - 380)));
   }
 }
 .premium {
@@ -309,9 +307,9 @@
   font-weight: 600;
   line-height: 105%;
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .premium{
-   font-size: calc(42px + (72 - 42) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .premium {
+    font-size: calc(42px + (72 - 42) * ((100vw - 380px) / (768 - 380)));
   }
 }
 @media (max-width: 380px) {
@@ -355,7 +353,7 @@
   font-weight: 600;
   line-height: 150%; /* 24px */
 }
-@media(hover:hover){ 
+@media (hover: hover) {
   .button-menu:hover {
     cursor: pointer;
     transition: all 1s ease-in-out;
@@ -373,32 +371,29 @@
     opacity: 1;
   }
 }
-  .button-menu {
-    position: relative;
-  }
+.button-menu {
+  position: relative;
+}
 
-  .text-button {
-    transition: all 0.5s ease;
-  }
+.text-button {
+  transition: all 0.5s ease;
+}
 
-  .coffee-cup {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.5s ease;
-    right: 60px;
-  }
-@media(max-width:768px){
+.coffee-cup {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease;
+  right: 60px;
+}
+@media (max-width: 768px) {
   .coffee-cup {
     padding-left: 8px;
     opacity: 1;
-    
   }
   .text-button {
     transform: translateX(-10px);
   }
-
 }
-  
 
 .main {
   display: flex;
@@ -443,8 +438,8 @@
   font-weight: 600;
   line-height: 125%; /* 75px */
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .choose{
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .choose {
     font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
@@ -470,8 +465,8 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .favorite{
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .favorite {
     font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
@@ -501,22 +496,21 @@
   border: 1px solid var(--border-dark, #665f55);
   transition: all 0.7s ease;
 }
-@media(hover:hover){
-  
-.button-left:hover,
-.button-right:hover {
-  cursor: pointer;
-}
+@media (hover: hover) {
+  .button-left:hover,
+  .button-right:hover {
+    cursor: pointer;
+  }
 
-.button-left:hover svg path {
-  stroke: #e1d4c9;
-  transition: transform 0.7s ease;
-}
+  .button-left:hover svg path {
+    stroke: #e1d4c9;
+    transition: transform 0.7s ease;
+  }
 
-.button-left:hover {
-  background-color: #665f55;
-  transition: 0.7s;
-}
+  .button-left:hover {
+    background-color: #665f55;
+    transition: 0.7s;
+  }
 }
 
 .row-slider {
@@ -622,16 +616,16 @@
   border: 1px solid var(--border-dark, #665f55);
   transition: all 0.7s ease;
 }
-@media(hover:hover){
+@media (hover: hover) {
   .button-right:hover svg path {
-  stroke: #e1d4c9;
-  transition: 0.7s;
-}
+    stroke: #e1d4c9;
+    transition: 0.7s;
+  }
 
-.button-right:hover {
-  background-color: #665f55;
-  transition: 0.7s;
-}
+  .button-right:hover {
+    background-color: #665f55;
+    transition: 0.7s;
+  }
 }
 
 @media (max-width: 760px) {
@@ -707,9 +701,9 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .resource{
-    font-size:calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .resource {
+    font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
 .the-perfect {
@@ -729,9 +723,9 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .the-perfect{
-    font-size:calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .the-perfect {
+    font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
 
@@ -760,7 +754,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  
 }
 
 @media (max-width: 768px) {
@@ -769,19 +762,17 @@
     overflow: hidden;
   }
 }
-@media(hover:hover){
+@media (hover: hover) {
   .about-photo-item-wrap:hover .about-photo-item {
-  transform: scale(0.9);
-  transition: 1s;
+    transform: scale(0.9);
+    transition: 1s;
+  }
 }
-}
-
 
 .about-photo-item-wrap-higher {
   max-height: 590px;
   border-radius: 20px;
   overflow: hidden;
- 
 }
 .about-photo-item-wrap-lower {
   max-height: 430px;
@@ -791,21 +782,19 @@
   transform: scale(1);
   transition: 1s;
   border-radius: 20px;
-  
- 
 }
-@media(max-width:768px){
-  .about-photo-item{
+@media (max-width: 768px) {
+  .about-photo-item {
     width: 100%;
     min-height: 590px;
     object-fit: cover;
     transform: scale(1.05);
-      }
+  }
 }
-@media(max-width:380px){
-  .about-photo-item{
-        transform: scale(1.25);
-      }
+@media (max-width: 380px) {
+  .about-photo-item {
+    transform: scale(1.25);
+  }
 }
 
 @media (max-width: 768px) {
@@ -868,9 +857,9 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .text-mobile-app{
-    font-size:calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .text-mobile-app {
+    font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
 .download {
@@ -890,9 +879,9 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .download{
-    font-size:calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .download {
+    font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
 }
 .text2-mobile-app {
@@ -930,22 +919,22 @@
   background-color: #e1d4c9;
   transition: all 1s ease;
 }
-@media(hover:hover){
+@media (hover: hover) {
   .button-app-store:hover {
-  background-color: #665f55;
-}
-.button-app-store:hover .button-text {
-  color: #e1d4c9;
-}
-.button-app-store:hover .App-store {
-  color: #e1d4c9;
-}
-.button-app-store:hover svg.default {
-  display: none;
-}
-.button-app-store:hover svg.hover {
-  display: block;
-}
+    background-color: #665f55;
+  }
+  .button-app-store:hover .button-text {
+    color: #e1d4c9;
+  }
+  .button-app-store:hover .App-store {
+    color: #e1d4c9;
+  }
+  .button-app-store:hover svg.default {
+    display: none;
+  }
+  .button-app-store:hover svg.hover {
+    display: block;
+  }
 }
 
 .button-app-store .button-text {
@@ -1025,23 +1014,23 @@
   font-weight: 600;
   line-height: 150%; /* 24px */
 }
-@media(hover:hover){
+@media (hover: hover) {
   .button-google-play:hover {
-  background-color: #665f55;
-}
-.button-google-play:hover .button2-text {
-  color: #e1d4c9;
-}
-.button-google-play:hover .Google-play {
-  color: #e1d4c9;
-}
-.button-google-play:hover svg.default2 {
-  display: none;
-}
+    background-color: #665f55;
+  }
+  .button-google-play:hover .button2-text {
+    color: #e1d4c9;
+  }
+  .button-google-play:hover .Google-play {
+    color: #e1d4c9;
+  }
+  .button-google-play:hover svg.default2 {
+    display: none;
+  }
 
-.button-google-play:hover svg.hover2 {
-  display: block;
-}
+  .button-google-play:hover svg.hover2 {
+    display: block;
+  }
 }
 .button-google-play.button2-text {
   color: #403f3d;
@@ -1187,11 +1176,11 @@
     font-size: 32px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 767px){
-  .contacts-text its{
-    font-size:calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .contacts-text its {
+    font-size: calc(32px + (72 - 32) * ((100vw - 380px) / (768 - 380)));
   }
-  }
+}
 
 .socials {
   display: flex;
@@ -1212,19 +1201,18 @@
   background-color: #665f55;
   transition: all 1s ease;
 }
-@media (hover: hover){
+@media (hover: hover) {
   .button-inst:hover {
-  background-color: #e1d4c9;
-}
-.button-inst:hover svg.default-inst {
-  display: none;
-}
+    background-color: #e1d4c9;
+  }
+  .button-inst:hover svg.default-inst {
+    display: none;
+  }
 
-.button-inst:hover svg.hover-inst {
-  display: block;
+  .button-inst:hover svg.hover-inst {
+    display: block;
+  }
 }
-}
-
 
 .button-inst svg.default-inst {
   display: block;
@@ -1245,18 +1233,18 @@
   background-color: #665f55;
   transition: all 1s ease;
 }
-@media (hover: hover){ 
-.button-twitter:hover {
-  background-color: #e1d4c9;
-}
+@media (hover: hover) {
+  .button-twitter:hover {
+    background-color: #e1d4c9;
+  }
 
-.button-twitter:hover svg.default-twitter {
-  display: none;
-}
+  .button-twitter:hover svg.default-twitter {
+    display: none;
+  }
 
-.button-twitter:hover svg.hover-twitter {
-  display: block;
-}
+  .button-twitter:hover svg.hover-twitter {
+    display: block;
+  }
 }
 
 .button-twitter svg.default-twitter {
@@ -1399,13 +1387,14 @@
   opacity: 0;
   transition: width 0.7s, opacity 0.7s;
 }
-@media(hover:hover){
+@media (hover: hover) {
   .link-item:hover::after {
-  width: 100%;
-  opacity: 1;
-  right: -50%; 
+    width: 100%;
+    opacity: 1;
+    right: -50%;
+  }
 }
+
+.test-red {
+  background: red;
 }
-
-
-
