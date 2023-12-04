@@ -355,7 +355,7 @@
   font-weight: 600;
   line-height: 150%; /* 24px */
 }
-@media (hover:hover) {
+@media(hover:hover){ 
   .button-menu:hover {
     cursor: pointer;
     transition: all 1s ease-in-out;
@@ -387,7 +387,17 @@
     transition: all 0.5s ease;
     right: 60px;
   }
+@media(max-width:768px){
+  .coffee-cup {
+    padding-left: 8px;
+    opacity: 1;
+    
+  }
+  .text-button {
+    transform: translateX(-10px);
+  }
 
+}
   
 
 .main {
@@ -781,8 +791,21 @@
   transform: scale(1);
   transition: 1s;
   border-radius: 20px;
-  object-fit: cover;
+  
  
+}
+@media(max-width:768px){
+  .about-photo-item{
+    width: 100%;
+    min-height: 590px;
+    object-fit: cover;
+    transform: scale(1.05);
+      }
+}
+@media(max-width:380px){
+  .about-photo-item{
+        transform: scale(1.25);
+      }
 }
 
 @media (max-width: 768px) {
