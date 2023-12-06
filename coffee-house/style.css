@@ -569,21 +569,20 @@
 .row-slider {
   display: flex;
   /*min-width: 480px;*/
-  max-width: 1152px;
-  max-height: 640px;
+  max-width: 80%;
+  /*max-height: 640px;*/
   justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
-  overflow: hidden;
+ overflow: hidden;
+  border:1px solid black;
 }
 .slider-line {
-  max-height: 680px;
-  max-width: 3466px;
+  /*max-height: 680px;
+  max-width: 3466px;*/
   display: flex;
-  position: relative;
-  left : 0;
   transition: all ease 1s;
-  
+  position: relative; /*можно убрать*/
 }
 
 .slide-1 {
@@ -594,6 +593,8 @@
   flex-direction: column;
   align-items: center;
   min-width:100%;
+  border:1px solid black;
+  
 }
 @media (max-width: 380px) {
   .slide-1 {
@@ -608,7 +609,9 @@
   max-width: 1152px;
   flex-direction: column;
   align-items: center;
-  min-width: 100%;
+  min-width:100%;
+  border:1px solid black;
+  
 }
 @media (max-width: 380px) {
   .slide-2 {
@@ -623,7 +626,8 @@
   max-width: 1152px;
   flex-direction: column;
   align-items: center;
-  min-width: 100%;
+  min-width:100%;
+  border:1px solid black;
 
 }
 @media (max-width: 380px) {

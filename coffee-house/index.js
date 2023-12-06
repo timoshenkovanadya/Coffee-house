@@ -9,7 +9,7 @@ window.document
     }
   });
 
-let offset = 0;
+/*let offset = 0;
 const sliderLine = window.document.querySelector(".slider-line");
 window.document
   .querySelector(".button-right")
@@ -29,4 +29,44 @@ window.document
       offset=2304;
     }
     sliderLine.style.left = -offset + "px";
+  });*/
+
+const slides = window.document.querySelectorAll(".slide-1, .slide-2, .slide-3");
+const sliderLine = window.document.querySelector(".slider-line");
+let count = 0;
+let width;
+/*function init() {
+  console.log("resize");
+  width = window.document.querySelector(".row-slider").offsetWidth;
+  sliderLine.style.width = width * slides.length + "px";
+  slides.forEach((item) => {
+    item.style.width = width + "px";
   });
+  
+}
+init();*/
+
+window.document
+  .querySelector(".button-left")
+  .addEventListener("click", function () {
+    count--;
+    if (count < 0) {
+      count = slides.length - 1;
+    }
+    rollSlider();
+  });
+
+window.document
+  .querySelector(".button-right")
+  .addEventListener("click", function () {
+    count++;
+    if (count >= slides.length) {
+      count = 0;
+    }
+    rollSlider();
+  });
+function rollSlider() {
+  /*width = document.documentElement.scrollWidth;*/
+  width = window.document.querySelector(".body").offsetWidth;
+  sliderLine.style.transform = "translate(-" + count * width + "px)";
+}
