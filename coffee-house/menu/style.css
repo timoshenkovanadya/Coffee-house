@@ -187,54 +187,52 @@
     border: 1px solid var(--border-dark, #665f55);
   }
 }
-
 .button-icon-burger-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  position: relative;
+  transition: all 1s ease;
 }
 .burger-hover1 {
   width: 16px;
-  height: 0px;
-  transform: rotate(-45deg);
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  stroke-width: 1.5px;
-  stroke: var(--text-dark, #403f3d);
-}
-.burger-hover2 {
-  width: 16px;
-  height: 0px;
-  transform: rotate(45deg);
   position: absolute;
   right: 0px;
   bottom: 0px;
   stroke-width: 1.5px;
   stroke: var(--text-dark, #403f3d);
 }
-
-.button-icon-burger .burger-default1,
-.button-icon-burger .burger-default2 {
-  display: block;
+.burger-hover2 {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  stroke-width: 1.5px;
+  stroke: var(--text-dark, #403f3d);
+  width: 16px;
 }
 
-.button-icon-burger .burger-hover1,
-.button-icon-burger .burger-hover2 {
-  display: none;
+.burger-hover1,
+.burger-hover2 {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
-@media(hover:hover){
- .button-icon-burger:hover .burger-default1,
-.button-icon-burger:hover .burger-default2 {
-  display: none;
+@media (hover: hover) {
+  .button-icon-burger:hover .burger-hover1,
+  .button-icon-burger:hover .burger-hover2 {
+    opacity: 1;
+  }
+  .button-icon-burger:hover .burger-default1,
+  .button-icon-burger:hover .burger-default2 {
+    opacity: 0;
+  }
 }
 
-.button-icon-burger:hover .burger-hover1,
-.button-icon-burger:hover .burger-hover2 {
-  display: block;
-} 
+.burger-default1,
+.burger-default2 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 
