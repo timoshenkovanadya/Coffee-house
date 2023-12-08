@@ -6,6 +6,20 @@ const coffee = window.document.querySelector(".coffee");
 const tea = window.document.querySelector(".tea");
 const desserts = window.document.querySelector(".desserts");
 
+const elementscoffee = window.document.querySelectorAll(".nextcoffee");
+const elementsdesserts = window.document.querySelectorAll(".nextdessert");
+
+const restartHelper = () => {
+  buttonrefresh.style.visibility = "visible";
+  for (let i = 0; i < elementscoffee.length; i++) {
+    elementscoffee[i].style.display = "none";
+  }
+
+  for (let i = 0; i < elementsdesserts.length; i++) {
+    elementsdesserts[i].style.display = "none";
+  }
+};
+
 coffee.style.display = "flex";
 tea.style.display = "none";
 desserts.style.display = "none";
@@ -14,18 +28,21 @@ buttontea.addEventListener("click", function () {
   coffee.style.display = "none";
   tea.style.display = "flex";
   desserts.style.display = "none";
+  restartHelper();
 });
 
 buttondesserts.addEventListener("click", function () {
   coffee.style.display = "none";
   tea.style.display = "none";
   desserts.style.display = "flex";
+  restartHelper();
 });
 
 buttoncoffee.addEventListener("click", function () {
   coffee.style.display = "flex";
   tea.style.display = "none";
   desserts.style.display = "none";
+  restartHelper();
 });
 
 buttontea.addEventListener("click", function () {
@@ -77,10 +94,7 @@ function initRefresh() {
 setInterval(initRefresh, 1000);
 
 buttonrefresh.addEventListener("click", function () {
-  const elementscoffee = window.document.querySelectorAll(".nextcoffee");
-  const elementsdesserts = window.document.querySelectorAll(".nextdessert");
-  
-  buttonrefresh.style.display = "none";  
+  buttonrefresh.style.visibility = "hidden";
   if (coffee.style.display === "flex") {
     for (let i = 0; i < elementscoffee.length; i++) {
       elementscoffee[i].style.display = "flex";
@@ -93,15 +107,15 @@ buttonrefresh.addEventListener("click", function () {
   }
 });
 
-function backToSmallSize() {
+/*function backToSmallSize() {
   if (window.innerWidth > 768) {
     for (let i = 0; i < elementscoffee.length; i++) {
-      elementscoffee[i].style.display = "none";
+      elementscoffee[i].style.display = "flex";
     }
     for (let i = 0; i < elementsdesserts.length; i++) {
-      elementsdesserts[i].style.display = "none";
+      elementsdesserts[i].style.display = "flex";
     }
     buttonrefresh.style.display = "none";
   }
 }
-setInterval(backToSmallSize, 1000);
+setInterval(backToSmallSize, 1000);*/
