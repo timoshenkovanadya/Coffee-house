@@ -344,6 +344,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
+  cursor:pointer;
+  border: 1px solid var(--border-light, #c1b6ad);
+  transition: all 0.7s ease;
 }
 .icon1 {
   display: flex;
@@ -352,6 +355,7 @@
   align-items: center;
   border-radius: 100px;
   background: var(--background-body, #e1d4c9);
+  
   color: var(--text-dark, #403f3d);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -364,6 +368,7 @@
   line-height: 150%; /* 24px */
   height: 30px;
   width: 30px;
+  transition: all 0.7s ease;
 }
 .picture-in-icon {
   height: 18px;
@@ -459,6 +464,7 @@
   line-height: 150%; /* 24px */
   height: 30px;
   width: 30px;
+  transition: all 0.7s ease;
 }
 @media(hover:hover){
   .tab-item3:hover {
@@ -578,19 +584,22 @@
 }
 .button-refresh {
   display: none;
-}
-@media (max-width: 768px) {
-  .button-refresh {
-    display: flex;
-    width: 60px;
+   width: 60px;
     height: 60px;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
     border: 1px solid var(--border-dark, #665f55);
+    
+}
+/*
+@media (max-width: 768px) {
+  .button-refresh {
+    display: flex;
   }
-  }
-  .contacts {
+    }*/
+    
+    .contacts {
     display: flex;
     flex-direction: column;
     justify-content: center;

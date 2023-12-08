@@ -576,6 +576,7 @@
   flex: 1 0 0;
  overflow: hidden;
   border:1px solid black;
+  
 }
 .slider-line {
   /*max-height: 680px;
@@ -583,6 +584,7 @@
   display: flex;
   transition: all ease 1s;
   position: relative; /*можно убрать*/
+
 }
 
 .slide-1 {
@@ -594,6 +596,8 @@
   align-items: center;
   min-width:100%;
   border:1px solid black;
+  transition: transform 1s;
+  
   
 }
 @media (max-width: 380px) {
@@ -611,6 +615,7 @@
   align-items: center;
   min-width:100%;
   border:1px solid black;
+  transition: transform 1s;
   
 }
 @media (max-width: 380px) {
@@ -628,6 +633,8 @@
   align-items: center;
   min-width:100%;
   border:1px solid black;
+  transition: transform 1s;
+  
 
 }
 @media (max-width: 380px) {
@@ -777,9 +784,15 @@
   width: 40px;
   height: 4px;
   border-radius: 100px;
-  background: var(--border-dark, #665f55);
+  background: var(--border-light, #c1b6ad);
 }
 .line2 {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background: var(--border-light, #c1b6ad);
+}
+.line3 {
   width: 40px;
   height: 4px;
   border-radius: 100px;
