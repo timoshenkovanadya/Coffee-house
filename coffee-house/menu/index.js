@@ -1,6 +1,7 @@
 const buttoncoffee = window.document.querySelector(".tab-item1");
 const buttontea = window.document.querySelector(".tab-item2");
 const buttondesserts = window.document.querySelector(".tab-item3");
+const buttonrefresh = window.document.querySelector(".button-refresh");
 
 const coffee = window.document.querySelector(".coffee");
 const tea = window.document.querySelector(".tea");
@@ -8,6 +9,25 @@ const desserts = window.document.querySelector(".desserts");
 
 const elementscoffee = window.document.querySelectorAll(".nextcoffee");
 const elementsdesserts = window.document.querySelectorAll(".nextdessert");
+
+coffee.style.display = "flex";
+tea.style.display = "none";
+desserts.style.display = "none";
+
+function initRefresh() {
+  if (
+    (window.innerWidth <= 768 && coffee.style.display === "flex") ||
+    (window.innerWidth <= 768 && desserts.style.display === "flex")
+  ) {
+    buttonrefresh.style.display = "flex";
+    buttonrefresh.style.visibility = "visible";
+  }
+  if (window.innerWidth > 768 || tea.style.display === "flex") {
+    buttonrefresh.style.display = "none";
+  }
+}
+
+initRefresh();
 
 const restartHelper = () => {
   buttonrefresh.style.visibility = "visible";
@@ -18,11 +38,10 @@ const restartHelper = () => {
   for (let i = 0; i < elementsdesserts.length; i++) {
     elementsdesserts[i].style.display = "none";
   }
+  initRefresh();
 };
 
-coffee.style.display = "flex";
-tea.style.display = "none";
-desserts.style.display = "none";
+
 
 buttontea.addEventListener("click", function () {
   coffee.style.display = "none";
@@ -79,20 +98,6 @@ buttoncoffee.addEventListener("click", function () {
   window.document.querySelector(".icon2").style.backgroundColor = "#c1b6ad";
 });
 
-const buttonrefresh = window.document.querySelector(".button-refresh");
-function initRefresh() {
-  if (
-    (window.innerWidth <= 768 && coffee.style.display === "flex") ||
-    (window.innerWidth <= 768 && desserts.style.display === "flex")
-  ) {
-    buttonrefresh.style.display = "flex";
-  }
-  if (window.innerWidth > 768 || tea.style.display === "flex") {
-    buttonrefresh.style.display = "none";
-  }
-}
-setInterval(initRefresh, 1000);
-
 buttonrefresh.addEventListener("click", function () {
   buttonrefresh.style.visibility = "hidden";
   if (coffee.style.display === "flex") {
@@ -104,6 +109,27 @@ buttonrefresh.addEventListener("click", function () {
     for (let i = 0; i < elementsdesserts.length; i++) {
       elementsdesserts[i].style.display = "flex";
     }
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    for (let i = 0; i < elementscoffee.length; i++) {
+      elementscoffee[i].style.display = "flex";
+    }
+    for (let i = 0; i < elementsdesserts.length; i++) {
+      elementsdesserts[i].style.display = "flex";
+    }
+    buttonrefresh.style.visibility = "hidden";
+  } else {
+    for (let i = 0; i < elementscoffee.length; i++) {
+      elementscoffee[i].style.display = "none";
+    }
+    for (let i = 0; i < elementsdesserts.length; i++) {
+      elementsdesserts[i].style.display = "none";
+    }
+    buttonrefresh.style.display = "flex";
+    buttonrefresh.style.visibility = "visible";
   }
 });
 
