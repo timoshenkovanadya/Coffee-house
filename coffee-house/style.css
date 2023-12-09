@@ -568,9 +568,9 @@
 
 .row-slider {
   display: flex;
-  /*min-width: 480px;*/
+ width: 210 vw;
   max-width: 80%;
-  /*max-height: 640px;*/
+  
   justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
@@ -581,16 +581,40 @@
 .slider-line {
   /*max-height: 680px;
   max-width: 3466px;*/
+  left: -210 vw;
   display: flex;
   transition: all ease 1s;
   position: relative; /*можно убрать*/
 
 }
+@keyframes move-right {
+  from {left: -210vw;}
+  to {left: -420vw;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 5s;
+}
+
+@keyframes move-left {
+  from {left: -210vw;}
+  to {left: 0vw;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 5s;
+}
+
+.hidden {
+  display: none;
+}
+
 
 .slide-1 {
   display: flex;
-  /* width: 1152px; */
-  /* min-width: 480px; */
+  
   max-width: 1162px;
   flex-direction: column;
   align-items: center;
@@ -644,8 +668,8 @@
 }
 .slide1-content {
   display: flex;
-  /* width: 480px; */
   max-width: 480px;
+  width: 70vw;
   flex-direction: column;
   align-items: center;
   gap: 20px;
