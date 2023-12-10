@@ -953,6 +953,7 @@
   position: fixed;
   transition: all 200ms;
 }
+
 .overlay {
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -972,6 +973,12 @@
   align-items: flex-start;
   align-self: stretch;
 }
+@media (max-width: 768px) {
+  .modal-coffee-preview {
+    max-width: 656px;
+  }
+}
+
 .modal-box {
   width: 310px;
   height: 310px;
@@ -983,7 +990,7 @@
   width: 340px;
   height: 340px;
   flex-shrink: 0;
-  background: url(../assets/coffee-1.jpg), lightgray 50% / cover no-repeat;
+  background: url(../assets/coffee-1.jpg);
 }
 .modal-description {
   display: flex;
@@ -1242,8 +1249,4 @@
   font-style: normal;
   font-weight: 600;
   line-height: 150%; /* 24px */
-}
-
-.noscroll {
-  overflow: hidden;
 }

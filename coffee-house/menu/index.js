@@ -30,6 +30,7 @@ function initRefresh() {
 initRefresh();
 
 const restartHelper = () => {
+  if (window.innerWidth > 768) return;
   buttonrefresh.style.visibility = "visible";
   for (let i = 0; i < elementscoffee.length; i++) {
     elementscoffee[i].style.display = "none";
@@ -40,8 +41,6 @@ const restartHelper = () => {
   }
   initRefresh();
 };
-
-
 
 buttontea.addEventListener("click", function () {
   coffee.style.display = "none";
