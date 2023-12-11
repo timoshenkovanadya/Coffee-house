@@ -10,6 +10,72 @@ const desserts = window.document.querySelector(".desserts");
 const elementscoffee = window.document.querySelectorAll(".nextcoffee");
 const elementsdesserts = window.document.querySelectorAll(".nextdessert");
 
+const links = window.document.querySelectorAll(".nav-menu-item");
+
+
+
+ window.document
+  .querySelector(".button-icon-burger")
+  .addEventListener("click", function () {
+    window.document
+      .querySelector(".burger-hover1")
+      .classList.toggle("burger-hover-active");
+    window.document
+      .querySelector(".burger-hover2")
+      .classList.toggle("burger-hover-active");
+    window.document
+      .querySelector(".burger-default1")
+      .classList.toggle("burger-default-active");
+    window.document
+      .querySelector(".burger-default2")
+      .classList.toggle("burger-default-active");      
+    window.document.querySelector(".new-menu").classList.toggle("new-menu2");
+    
+  });
+
+   
+ 
+  links.forEach(function(links) {
+    links.addEventListener("click", function () {
+      const menu = window.document.querySelector(".new-menu");
+       menu.classList.remove("new-menu2");
+       window.document
+       .querySelector(".burger-hover1")
+       .classList.remove("burger-hover-active");
+     window.document
+       .querySelector(".burger-hover2")
+       .classList.remove("burger-hover-active");
+     window.document
+       .querySelector(".burger-default1")
+       .classList.remove("burger-default-active");
+     window.document
+       .querySelector(".burger-default2")
+       .classList.remove("burger-default-active"); 
+
+      });
+    });
+
+    function smallerSize() {
+      if (window.innerWidth > 768) {
+        document.querySelector(".new-menu").classList.remove('new-menu2');
+        window.document
+       .querySelector(".burger-hover1")
+       .classList.remove("burger-hover-active");
+     window.document
+       .querySelector(".burger-hover2")
+       .classList.remove("burger-hover-active");
+     window.document
+       .querySelector(".burger-default1")
+       .classList.remove("burger-default-active");
+     window.document
+       .querySelector(".burger-default2")
+       .classList.remove("burger-default-active"); 
+      }
+      
+    }    
+    window.addEventListener('resize', smallerSize);
+
+
 coffee.style.display = "flex";
 tea.style.display = "none";
 desserts.style.display = "none";

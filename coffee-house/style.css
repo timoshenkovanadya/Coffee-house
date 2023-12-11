@@ -25,6 +25,7 @@
   align-self: stretch;
   max-width: 1440px;
   overflow: hidden;
+  transition: all 1s ease-in-out;
 }
 @media (max-width: 768px) {
   .header {
@@ -238,11 +239,11 @@
 }
 .new-menu {
   transform: translateX(2000px);
-  height:0px;  
   background: var(--background-body, #e1d4c9);
-  transition: all 1s;
+  transition: all 1s ease-in-out;
   
 }
+
 
 .new-menu2 {
   display: flex;
@@ -255,7 +256,6 @@
   flex: 1 0 0;
   background: var(--background-body, #e1d4c9);
   transform: translateX(0);
-  opacity: 1;
   height: auto;
   position: fixed;
   top: 0;
@@ -263,7 +263,7 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
 }
 
 .nav-menu {
