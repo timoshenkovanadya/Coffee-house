@@ -180,6 +180,10 @@
     border-radius: 100px;
     border: 1px solid var(--border-dark, #665f55);
   }
+  .button-icon-burger:hover {
+    cursor: pointer;
+    
+  }
 }
 .button-icon-burger-menu {
   display: flex;
@@ -316,6 +320,7 @@
 }
 .container {
   display: flex;
+  position: relative;
   max-width: 1360px;
   padding: 100px;
   flex-direction: column;
@@ -323,7 +328,8 @@
   align-items: flex-start;
   align-self: stretch;
   border-radius: 40px;
-  background: url(assets/img-hero.jpg);
+  overflow: hidden;
+  /* background: url(assets/img-hero.jpg); */
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -338,6 +344,16 @@
   .container {
     padding: 60px 16px;
   }
+}
+.video {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
 }
 .offer {
   display: flex;
