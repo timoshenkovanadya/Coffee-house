@@ -265,7 +265,19 @@
   bottom: 0;
 }
 
+.link-burger{
+  color: var(--Text-Dark, #403F3D);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
 
+/* Desktop/Action/burger-link */
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 40px */
+text-decoration:none;
+}
 .new-menu2 {
   display: flex;
   max-width: 768px;
@@ -1039,6 +1051,8 @@
 @media(max-width:767px){
   .modal.active{
    display:inline-flex;
+   max-width:342px;
+   max-height: 
   }
 }
 
